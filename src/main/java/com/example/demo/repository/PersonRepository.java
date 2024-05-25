@@ -58,6 +58,7 @@ public class PersonRepository {
             statement.setInt(1, id);
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
+                // вместо названия полей используем номера id - 1, name - 2, age - 3
                 person = new Person(rs.getInt(1), rs.getString(2), rs.getInt(3));
             }
         } catch (SQLException e) {

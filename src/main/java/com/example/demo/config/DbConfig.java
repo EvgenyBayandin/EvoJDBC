@@ -8,6 +8,4 @@ public interface DbConfig {
 
     String password();
 
-    String port();
-
 }
