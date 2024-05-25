@@ -8,6 +8,11 @@ public class H2Config implements DbConfig {
 
     private String password;
 
+    public H2Config(String url, String username, String password) {
+        this.url = url;
+        this.username = username;
+        this.password = password;
+    }
 
     @Override
     public String url() {
